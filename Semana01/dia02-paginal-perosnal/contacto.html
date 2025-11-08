@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Coronel - Contacto</title>
+</head>
+<body>
+  <header>
+    <h1>Contacto</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="biografia.html">Biografía</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Escríbeme</h2>
+
+      <!-- Formulario básico con validaciones simples -->
+      <form>
+        <label>
+          Nombre (obligatorio)
+          <input type="text" name="nombre" required minlength="3" maxlength="30" placeholder="Tu nombre">
+        </label>
+
+        <label>
+          Email (obligatorio)
+          <input type="email" name="correo" required placeholder="tu@correo.com">
+        </label>
+
+        <label>
+          Mensaje
+          <textarea name="mensaje" rows="5" placeholder="Cuéntame en qué puedo ayudarte..."></textarea>
+        </label>
+
+        <h3>Preferencias</h3>
+
+        <label>
+          <input type="checkbox" name="suscripcion" value="si">
+          Quiero recibir novedades
+        </label>
+
+        <p>¿Idioma preferido?</p>
+        <label><input type="radio" name="idioma" value="es"> Español</label>
+        <label><input type="radio" name="idioma" value="en"> Inglés</label>
+
+        <label>
+          Tema del mensaje
+          <select name="tema" required>
+            <option value="">Selecciona una opción...</option>
+            <option value="colaboracion">Colaboración</option>
+            <option value="consulta">Consulta</option>
+            <option value="otros">Otros</option>
+          </select>
+        </label>
+
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+
+    <section>
+      <h2>Otros medios</h2>
+      <p>
+        <a href="mailto:juan.coronel@example.com">juan.coronel@example.com</a><br>
+        <a href="https://lenguajehtml.com/html/" target="_blank">Recurso que me ayudó a aprender HTML (externo)</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Juan Coronel • Gracias por visitar mi sitio</p>
+  </footer>
+</body>
+</html>
